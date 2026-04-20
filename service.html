@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="color-scheme" content="only light">
+	<title>Здоровая система</title>
+
+	<link rel="stylesheet" href="css/bootstrap523.min.css" />
+	<link rel="stylesheet" href="css/custom-select.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+	<div class="body-inner">
+
+		<header class="headerMain" id="headerMain">
+	<div class="wrapperDefault">
+		<div class="headerMain-inner">
+			<div class="headerMain-logo" >
+				<span class="logo"><img src="img/logo.webp" alt=""></span>
+			</div>
+			<div class="headerMain-time">
+				С 09:00 до 21:00 ежедневно
+			</div>
+			<div class="headerMain-address">
+				Москва, метро Цветной бульвар <br />
+				Улица Самотёчная, 5 (этаж 2)
+			</div>
+			<div class="headerMain-phone">
+				<a href="tel:+74952110803">+7 (495) 211-08-03</a>
+			</div>
+			<div class="btn headerMain-blind blindVersion-link visibleFor-impaired">
+				<div class="headerMain-blind-txt blindVersion-txt">
+					Обычная версия
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="headerMain-menuLine-intersection visibleFor-normal"></div>
+	<div class="headerMain-menuLine-outer">
+
+		<div class="headerMain-menuLine">
+			<div class="wrapperDefault">
+				<div class="headerMain-menuLine-inner">
+					<div class="headerMain-menuMobile">
+						<nav class="headerMain-menu">
+							<a href="">О клинике</a>
+							<a href="">Врачи</a>
+							<a href="">Отзывы</a>
+							<a href="">Услуги и прайс</a>
+						</nav>
+					</div>
+					<div class="headerMain-blind blindVersion-link visibleFor-normal">
+						<div class="headerMain-blind-ico blindVersion-ico impaired-skip"></div>
+						<div class="headerMain-blind-txt blindVersion-txt visibleFor-normal">
+							Версия для слабовидящих
+						</div>
+						<div class="headerMain-blind-txt blindVersion-txt visibleFor-impaired">
+							Обычная версия
+						</div>
+					</div>
+					<div class="headerMain-search">
+						<button type="button" class="headerMain-search-ico impaired-skip" value="Поиск"></button>
+						<button type="button" class="headerMain-search-close impaired-skip" value="Закрыть поиск"></button>
+						<div class="headerMain-search-cont">
+							<div class="headerMain-search-field">
+								<input type="text" placeholder="Найти..." />
+							</div>
+							<ul class="headerMain-search-result">
+								<li><a href="" class="headerMain-search-result-link">Консультация врача Константинова Константина Контстантиновича</a>
+									<span class="headerMain-search-result-dir">Услуга</span>
+								</li>
+								<li><a href="" class="headerMain-search-result-link">Консультация врача</a>
+									<span class="headerMain-search-result-dir">Врач</span>
+								</li>
+								<li><a href="" class="headerMain-search-result-link">Консультация врача</a>
+									<span class="headerMain-search-result-dir">Врач</span>
+								</li>
+								<li><a href="" class="headerMain-search-result-link">Консультация врача</a>
+									<span class="headerMain-search-result-dir">Врач</span>
+								</li>
+								<li><a href="" class="headerMain-search-result-link">Консультация врача</a>
+									<span class="headerMain-search-result-dir">Врач</span>
+								</li>
+							</ul>
+	
+						</div>
+					</div>				
+					<button type="button" class="btn btn-green headerMain-signup"><span class="btn-txt" data-bs-toggle="modal" data-bs-target="#modal-contact">Записаться на приём</span></button>
+					<button type="button" class="headerMain-burger impaired-skip" value="Мобильное меню"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="headerMain-assistPnl-intersection visibleFor-impaired"></div>
+	<div class="headerMain-assistPnl-outer visibleFor-impaired">
+		<div class="headerMain-assistPnl">
+			<div class="wrapperDefault">
+				<div class="assistPnl">
+					<div class="assistPnl-btnGoto">
+						<button type="button" onclick="document.getElementById('headerMain').scrollIntoView({behavior:'smooth'})" type="button" class="btn btn-white btn-onWhite btn-color-black"><span class="btn-txt">К содержанию</span></button>
+					</div>
+					<div class="assistPnl-font">
+						<div class="btn-group-title assistPnl-font-title">Шрифт</div>
+						<div class="btn-group select-fontSize">
+							<button type="button" class="select-fontSize-normal fs-14 active" data-size="16" data-namesize="normal" data-index="1" title="Размер шрифта нормальный">A</button>
+							<button type="button" class="select-fontSize-medium fs-22" data-size="20" data-namesize="medium" data-index="2" title="Размер шрифта увеличенный">A</button>
+							<button type="button" class="select-fontSize-large fs-30" data-size="24" data-namesize="large" data-index="3" title="Размер шрифта большой">A</button>
+						</div>
+					</div>
+					<div class="assistPnl-color">				
+						<div class="btn-group-title assistPnl-font-title">Цвет</div>
+						<div class="btn-group select-colorScheme">
+							<button type="button" class="select-color-c1 active" data-index="1" data-scheme="blackOnWhite" title="Цветовая схема №1" style="color:#000 !important">Ц</button>
+							<button type="button" class="select-color-c2" data-index="2" data-scheme="whiteOnBlack" title="Цветовая схема №2" style="color:#fff !important">Ц</button>
+							<button type="button" class="select-color-c3" data-index="3" data-scheme="blueOnBlue" title="Цветовая схема №3" style="color:#2E6091 !important">Ц</button>
+							<button type="button" class="select-color-c4" data-index="4" data-scheme="grayOnSand" title="Цветовая схема №4" style="color:#626261 !important">Ц</button>
+							<button type="button" class="select-color-c5" data-index="5" data-scheme="limeOnBrown" title="Цветовая схема №5" style="color:#9CDC4B !important">Ц</button>
+						</div>
+					</div>
+					<div class="assistPnl-player">				
+						<div class="btn-group player-mode">
+							<button type="button" class="player-mode-all" title="Озвучить всё">Озвучить всё</button>
+							<button type="button" class="player-mode-play" title="пуск"></button>
+							<button type="button" class="player-mode-pause" title="пауза"></button>
+							<button type="button" class="player-mode-stop" title="стоп"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+		<nav class="breadcrumb">
+			<div class="wrapperDefault">
+				<a href="/">Главная</a>
+				<a href="">Услуги и прайс</a>
+				<span>УЗИ</span>
+			</div>
+		</nav>
+
+		<section class="section-wrapper section-top">
+			<div class="wrapperDefault">
+				<div class="bannerText">
+					<div class="bannerText-photo">
+						<img src="img/uzi.webp" alt="" />
+					</div>
+					<div class="bannerText-content bg-10">
+						<div class="getAppointment-item">
+							<div class="getAppointment-item-inner">
+								<div class="getAppointment-title h1">
+									УЗИ
+								</div>
+								<div class="getAppointment-intro w-75">
+									В частной клинике «Промед» вы можете сделать платное информативное УЗИ всех органов в Москве, оценку которого произведут эксперты в этой области.
+								</div>								
+								<a href="" class="btn btn-white getAppointment-btn"><span class="lnk-txt">Записаться на приём</span></a>
+							</div>
+						</div>
+					</div>
+				</div>					
+			</div>
+		</section>
+
+		<section class="section-wrapper section-aboutService paddsY bg-green">
+			<div class="wrapperDefault">
+				<div class="h1 c-white">
+					Подробнее об услуге
+				</div>
+				<div class="accordion" id="accordion-1">
+				
+					<div class="accordion-item">
+						<h3 class="accordion-header">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accitem1"
+								aria-expanded="true" aria-controls="accitem1">
+								Об услуге
+							</button>
+						</h3>
+						<div id="accitem1" class="accordion-collapse collapse show" data-bs-parent="#accordion-1">
+							<div class="accordion-body">
+								Lorem ipsum dolor sit amet consectetur. Euismod et orci erat laoreet erat sit. Ultrices sit aliquet potenti tempus. Vel sed et id nisl facilisis tortor. Tincidunt penatibus fermentum leo lacus sed nunc. Lorem ipsum dolor sit amet consectetur. Euismod et orci erat laoreet erat sit. Ultrices sit aliquet potenti tempus. Vel sed et id nisl facilisis tortor. Tincidunt penatibus fermentum leo lacus sed nunc.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h3 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accitem2"
+								aria-expanded="false" aria-controls="accitem2">
+								Показания для обследования
+							</button>
+						</h3>
+						<div id="accitem2" class="accordion-collapse collapse" data-bs-parent="#accordion-1">
+							<div class="accordion-body">
+								<p>Врач может назначить УЗИ при подозрениях на воспалительный процесс в организме, новообразования, камни в полостных органах, смещение внутренних органов, нарушения кровоснабжения тканей, серьёзные травмы.</p>
+								<p>Диагностика показана при подготовке к хирургическим вмешательствам, а также для контроля назначенного лечения. Обследование ультразвуком назначают при функциональных нарушениях для выяснения их причины. УЗИ можно сделать по назначению врача или по собственному желанию. Профилактические обследования позволяют на ранних стадиях диагностировать болезни.</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h3 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accitem3"
+								aria-expanded="false" aria-controls="accitem3">
+								Как проходит обследование
+							</button>
+						</h3>
+						<div id="accitem3" class="accordion-collapse collapse" data-bs-parent="#accordion-1">
+							<div class="accordion-body">
+								<p>УЗИ — безопасная и безболезненная процедура, которая не имеет возрастных ограничений. В большинстве случаев она не требует подготовки. Исследование органов малого таза (трансабдоминальное) проводят при наполненном мочевом пузыре. Перед обследованием органов брюшной полости нельзя употреблять продукты, которые стимулируют газообразование. По назначению врача предварительно применяются препараты от вздутия. Диагностику проводят натощак.</p>
+
+								<p>На процедуру нужно предварительно записаться. При обследовании любого органа порядок процедуры следующий:</p>
+								<ul class="ulStyle-1">
+									<li>Пациент освобождает от одежды часть тела в зоне диагностического интереса.</li>
+									<li>Занимает правильно положение на кушетке.</li>
+									<li>Врач наносит на кожу звукопроводящий гель.</li>
+									<li>Водит датчиком по коже (при трансректальном исследовании — датчик вводится в прямую кишку, а при трансвагинальном — во влагалище).</li>
+									<li>Фиксирует полученные сведения в протоколе.</li>
+									<li>Выдаёт заключение пациенту.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h3 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accitem4"
+								aria-expanded="false" aria-controls="accitem4">
+								Расшифровка
+							</button>
+						</h3>
+						<div id="accitem4" class="accordion-collapse collapse" data-bs-parent="#accordion-1">
+							<div class="accordion-body">
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis excepturi eius perferendis optio nam dolorem aliquid fugiat iste, porro harum voluptatibus rem, blanditiis doloribus quas assumenda corporis, sed molestiae eum.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-wrapper section-priceService">
+			<div class="wrapperDefault">
+				<div class="h1">
+					Стоимость услуги
+				</div>
+				<ul class="priceService">
+					<li class="priceService-item">
+						<div class="priceService-title">УЗДГ брюшной аорты и ее ветвей</div>
+						<div class="priceService-price">0 000 руб.	</div>
+					</li>
+					<li class="priceService-item">
+						<div class="priceService-title">УЗДГ вен верхних конечностей</div>
+						<div class="priceService-price">0 000 руб.	</div>
+					</li>
+					<li class="priceService-item">
+						<div class="priceService-title">УЗДГ магистральных сосудов шеи (МАГ,БЦА)</div>
+						<div class="priceService-price">0 000 руб.	</div>
+					</li>
+					<li class="priceService-item">
+						<div class="priceService-title">УЗДГ почечных артерий</div>
+						<div class="priceService-price">0 000 руб.	</div>
+					</li>
+					<li class="priceService-item">
+						<div class="priceService-title">УЗДГ вен нижних конечностей</div>
+						<div class="priceService-price">0 000 руб.	</div>
+					</li>
+				</ul>
+				<div class="priceService-item priceService-check">
+					<div class="priceService-title"><b>Проверил</b></div>
+					<div class="priceService-price"><img src="img/signature.svg" alt="" /></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-wrapper section-patientWord">
+			<div class="wrapperDefault">
+				<div class="patientWord-header gutters-inner">
+					<img src="img/temp-2.webp" class="mb-4" alt="" />
+					<div class="row">
+						<div class="col-12 col-md-8">
+							<div class="patientWord-title h1">
+								Тёплые слова пациентов
+								<div class="subTitle-h1">о нашей работе</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-4">
+							<div class="patientWord-tabs">
+								<a href="" class="btn btn-blue"><span class="btn-logo"><img src="img/logo-prodoc.svg"
+											alt=""></span><span class="btn-txt">ПроДокторов</span></a>
+								<a href="" class="btn btn-blue"><span class="btn-logo"><img src="img/logo-y.svg"
+											alt=""></span><span class="btn-txt">Яндекс</span></a>
+								<a href="" class="btn btn-blue"><span class="btn-logo"><img src="img/logo-docdoc.svg"
+											alt=""></span><span class="btn-txt">DocDoc</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="patientWord-items">
+					<div class="patientWord-item d-none d-md-block">
+						<div class="patientWord-item-header">
+							<div class="patientWord-medic-photo">
+								<img src="img/temp-medic-3.webp" alt="" />
+							</div>
+							<div class="patientWord-medic-name">Никонов Михаил Юрьевич</div>
+							<div class="patientWord-medic-position">кардиолог, детский кардиолог, терапевт,
+								функциональный диагност</div>
+						</div>
+						<div class="patientWord-info">
+							<div class="patientWord-date">отзыв от 01.01.2024</div>
+							<div class="patientWord-reit">
+								<div class="patientWord-reit-val">5.0</div>
+								<div class="patientWord-reit-stars reitingStars-static">
+									<div style="width: 70%;"></div>
+								</div>
+							</div>
+						</div>
+						<div class="patientWord-data">
+							<div class="patientWord-data-photo">
+								<img src="img/nophoto-patient.webp" alt="">
+							</div>
+							<div class="patientWord-data-name">Пациент</div>
+							<div class="patientWord-data-tel">+7-927-13XXXXX</div>
+						</div>
+						<div class="patientWord-content">
+							<p>В Москве недавно, но была у многих врачей и с уверенностью могу сказать, что это лучший
+								врач на моем пути. Все прошло очень хорошо, просто замечательно. Доктор очень
+								внимательный, знающий, грамотный, уверенный в своей работе. Только одни положительные
+								качества. Врач всё объяснил подробно, по итогу назначил лечение. Будем лечиться.:)
+								Не менее важное, на мой взгляд, врач всегда улыбается, тем самым поднимает настрой.</p>
+						</div>
+						<div class="patientWord-answer">
+							Спасибо, приятно читать такой отзыв о работе нашего врача. Рады, что вы остались довольны
+							консультацией. Если вам снова потребуется помощь, ждём вас! Здоровья вам!
+						</div>
+					</div>
+					<div class="patientWord-item">
+						<div class="patientWord-item-header">
+							<div class="patientWord-medic-photo">
+								<img src="img/temp-medic-3.webp" alt="" />
+							</div>
+							<div class="patientWord-medic-name">Никонов Михаил Юрьевич</div>
+							<div class="patientWord-medic-position">кардиолог, детский кардиолог, терапевт,
+								функциональный диагност</div>
+						</div>
+						<div class="patientWord-info">
+							<div class="patientWord-date">отзыв от 01.01.2024</div>
+							<div class="patientWord-reit">
+								<div class="patientWord-reit-val">5.0</div>
+								<div class="patientWord-reit-stars reitingStars-static">
+									<div style="width: 80%;"></div>
+								</div>
+							</div>
+						</div>
+						<div class="patientWord-data">
+							<div class="patientWord-data-photo">
+								<img src="img/nophoto-patient.webp" alt="">
+							</div>
+							<div class="patientWord-data-name">Пациент</div>
+							<div class="patientWord-data-tel">+7-927-13XXXXX</div>
+						</div>
+						<div class="patientWord-content">
+							<p>В Москве недавно, но была у многих врачей и с уверенностью могу сказать, что это лучший
+								врач на моем пути. Все прошло очень хорошо, просто замечательно. Доктор очень
+								внимательный, знающий, грамотный, уверенный в своей работе. Только одни положительные
+								качества. Врач всё объяснил подробно, по итогу назначил лечение. Будем лечиться.:)
+								Не менее важное, на мой взгляд, врач всегда улыбается, тем самым поднимает настрой.</p>
+						</div>
+						<div class="patientWord-answer">
+							Спасибо, приятно читать такой отзыв о работе нашего врача. Рады, что вы остались довольны
+							консультацией. Если вам снова потребуется помощь, ждём вас! Здоровья вам!
+						</div>
+					</div>
+
+				</div>
+
+				<div class="paging paging-blue">
+					<nav>
+						<a href="" class="paging-page paging-page-prev"></a>
+						<a href="" class="paging-page active">1</a>
+						<a href="" class="paging-page">2</a>
+						<a href="" class="paging-page">...</a>
+						<a href="" class="paging-page">11</a>
+						<a href="" class="paging-page">10</a>
+						<a href="" class="paging-page paging-page-next"></a>
+					</nav>
+				</div>
+
+				<div class="patientWord-footer gutters-inner">
+
+					<a href="" class="btn btn-blue"><span class="btn-txt">Смотреть все отзывы</span></a>
+					<button type="button" class="btn btn-blue"><span class="btn-txt">Оставить отзыв</span></button>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="section-wrapper section-slider">
+			<div class="wrapperDefault">
+				<div class="getAppointment-swiper swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="getAppointment-item">
+								<div class="getAppointment-item-inner">
+									<div class="getAppointment-title h1 w-50">
+										Семейный абонемент
+									</div>
+									<div class="getAppointment-intro">
+										Базовое иследование 2&nbsp;раза в&nbsp;год для всей семьи, чтобы правильно принимать витамины и&nbsp;оптимально сбалансировать стремительную жизнь в&nbsp;большом городе
+									</div>
+									<div class="getAppointment-price">
+										<div class="getAppointment-price-curr">0 000 <span class="rub">руб.</span></div>
+										<div class="getAppointment-price-old">0 000 <span class="rub">руб.</span></div>
+									</div>
+									<a href="" class="btn btn-white getAppointment-btn"><span class="lnk-txt">Записаться на приём</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="getAppointment-item">
+								<div class="getAppointment-item-inner">
+									<div class="getAppointment-title h1">
+										Первая консультация любого врача для новых пациентов
+									</div>
+									<div class="getAppointment-intro">
+									</div>
+									<div class="getAppointment-price">
+										<div class="getAppointment-price-curr">0 000 <span class="rub">руб.</span></div>
+										<div class="getAppointment-price-old">0 000 <span class="rub">руб.</span></div>
+									</div>
+									<a href="" class="btn btn-white getAppointment-btn"><span class="lnk-txt">Записаться на приём</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="getAppointment-item">
+								<div class="getAppointment-item-inner">
+									<div class="getAppointment-title h1 w-50">
+										Семейный абонемент
+									</div>
+									<div class="getAppointment-intro">
+										Базовое иследование 2&nbsp;раза в&nbsp;год для всей семьи, чтобы правильно принимать витамины и&nbsp;оптимально сбалансировать стремительную жизнь в&nbsp;большом городе
+									</div>
+									<div class="getAppointment-price">
+										<div class="getAppointment-price-curr">0 000 <span class="rub">руб.</span></div>
+										<div class="getAppointment-price-old">0 000 <span class="rub">руб.</span></div>
+									</div>
+									<a href="" class="btn btn-white getAppointment-btn"><span class="lnk-txt">Записаться на приём</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="getAppointment-item">
+								<div class="getAppointment-item-inner">
+									<div class="getAppointment-title h1">
+										Первая консультация любого врача для новых пациентов
+									</div>
+									<div class="getAppointment-intro">
+									</div>
+									<div class="getAppointment-price">
+										<div class="getAppointment-price-curr">0 000 <span class="rub">руб.</span></div>
+										<div class="getAppointment-price-old">0 000 <span class="rub">руб.</span></div>
+									</div>
+									<a href="" class="btn btn-white getAppointment-btn"><span class="lnk-txt">Записаться на приём</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination-dots"></div>
+					<div class="swiper-navigation-cotainer">
+						<div class="swiper-button-prev blueStyle"></div>
+						<div class="swiper-button-next blueStyle"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-wrapper section-whychoose">			
+			<div class="wrapperDefault">
+				<div class="h1">
+					Почему 10.000+ пациентов
+					<div class="subTitle-h1">выбрали нашу клинику</div>
+				</div>
+				<div class="row section-whychoose-inner">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="whychoose-item">
+							<div class="whychoose-title h4">
+								Сильная <br /> УЗИ-диагностика
+							</div>
+							<div class="whychoose-intro">
+								<p>
+									Квалификация врачей и&nbsp;технические возможности позволяют обнаружить заболевания
+									на&nbsp;самых ранних этапах и&nbsp;своевременно назначить лечение
+								</p>
+							</div>
+							<div class="whychoose-img">
+								<img src="img/why-1.svg" width="45" alt="Сильная УЗИ-диагностика" />
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="whychoose-item">
+							<div class="whychoose-title h4">
+								Амбулаторная <br /> хирургия 1&nbsp;дня
+							</div>
+							<div class="whychoose-intro">
+								<p>
+									Атравматичные малые операции без длительного периода реабилитации могут проводиться
+									неотложно по&nbsp;необходимости
+								</p>
+							</div>
+							<div class="whychoose-img">
+								<img src="img/why-2.svg" width="51" alt="Сильная УЗИ-диагностика" />
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="whychoose-item">
+							<div class="whychoose-title h4">
+								Опытные специалисты и&nbsp;их&nbsp;подход
+							</div>
+							<div class="whychoose-intro">
+								<p>
+									Осмысленный подход благодаря опыту врачей даёт возможность решить любой вопрос
+									со&nbsp;здоровьем в&nbsp;одном месте за&nbsp;минимальное время при максимальном результате
+								</p>
+							</div>
+							<div class="whychoose-img">
+								<img src="img/why-3.svg" width="54" alt="Сильная УЗИ-диагностика" />
+							</div>
+						</div>
+					</div>
+		
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="whychoose-item">
+							<div class="whychoose-title h4">
+								Мы&nbsp;диагностируем <br /> и&nbsp;лечим
+							</div>
+							<div class="whychoose-intro">
+								<p>
+									Формируем консилиумы врачей и обеспечиваем комплексное клиническое мышление по пациенту
+								</p>
+							</div>
+							<div class="whychoose-img">
+								<img src="img/why-4.svg" width="47" alt="Сильная УЗИ-диагностика" />
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="whychoose-item">
+							<div class="whychoose-title h4">
+								Развитые узкопрофильные терапевтические направления
+							</div>
+							<div class="whychoose-intro">
+								<p>
+									Гастроэнтеролог, ревматолог, аллерголог, пульмонолог, кардиолог, эндокринолог, уролог,
+									гинеколог, невролог, проктолог, хирург
+								</p>
+							</div>
+							<div class="whychoose-img">
+								<img src="img/why-5.svg" width="51" alt="Сильная УЗИ-диагностика" />
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="whychoose-item">
+							<div class="whychoose-title h4">
+								Оптимальный баланс стоимости и&nbsp;ценности
+							</div>
+							<div class="whychoose-intro">
+								<p>
+									Как правило в&nbsp;клиниках Москвы прием длится 20&nbsp;минут при стоимости
+									от&nbsp;2000&nbsp;рублей. В&nbsp;нашей клинике&nbsp;&mdash; от&nbsp;40&nbsp;минут
+									до&nbsp;1&nbsp;часа, что со&nbsp;стоимостью порядка 5000 рублей интереснее для результата
+								</p>
+							</div>
+							<div class="whychoose-img">
+								<img src="img/why-6.svg" width="31" alt="Сильная УЗИ-диагностика" />
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+
+		<section class="section-wrapper section-similarServices">
+			<div class="wrapperDefault gutters-extend">
+				<div class="h1">Похожие услуги</div>
+				<div class="similarServices">
+					<a href="" class="similarServices-item">
+						<div class="similarServices-item-img"><img src="img/temp-article-thumb-2.webp" alt="" /></div>
+						<div class="similarServices-item-title">Обезболивание</div>
+					</a>
+					<a href="" class="similarServices-item">
+						<div class="similarServices-item-img"><img src="img/temp-article-thumb-2.webp" alt="" /></div>
+						<div class="similarServices-item-title">Обезболивание</div>
+					</a>
+					<a href="" class="similarServices-item">
+						<div class="similarServices-item-img"><img src="img/temp-article-thumb-2.webp" alt="" /></div>
+						<div class="similarServices-item-title">Обезболивание</div>
+					</a>
+					<a href="" class="similarServices-item">
+						<div class="similarServices-item-img"><img src="img/temp-article-thumb-2.webp" alt="" /></div>
+						<div class="similarServices-item-title">Обезболивание</div>
+					</a>
+				</div>
+				<div class="row mt-4 mt-md-5">
+					<div class="col-12 col-md-4 col-lg-3 mx-auto">
+						<a href="" class="btn btn-blue w-100"><span class="btn-txt">Посмотреть все услуги</span></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-wrapper section-findmedic">
+			<div class="wrapperDefault filter-wrapper gutters-extend">
+				<div class="h1">Найти нужного специалиста</div>
+
+				<div class="filter">
+					<div class="filter-item">
+						<select class="custom-select">
+							<option value="1" selected>Выберите врача</option>
+							<option value="2">Арутюнянц Арсен Гамлетович</option>
+							<option value="3">Бабасян Лилит Левоновна</option>
+							<option value="4">Биндасова Ольга Ваноевна</option>
+							<option value="5">Бобылева Виктория Николаевна</option>
+							<option value="6">Буков Павел Александрович</option>
+							<option value="7">Булгакова Марина Евгеньевна</option>
+							<option value="8">Гилязова Алсу Вильямовна</option>
+							<option value="9">Давидов Натан Рашбилович</option>
+							<option value="10">Дехисси-Гольбрехт Муад Альфредович</option>
+							<option value="11">Никонов Михаил Юрьевич</option>
+							<option value="12">Огнева Елена Владимировна</option>
+							<option value="13">Севастьянова Наталья Владимировна</option>
+							<option value="14">Селиванова Анна Владимировна</option>
+							<option value="15">Тардов Михаил Владимирович</option>
+							<option value="16">Яковчиц Александр Олегович</option>
+						</select>
+					</div>
+					<div class="filter-item">
+						<select class="custom-select">
+							<option value="1" selected>Специализация</option>							
+							<option value="2">Анестезиолог</option>
+							<option value="3">Кардиолог</option>
+							<option value="4">Дерматолог</option>
+							<option value="5">Эндокринолог</option>
+							<option value="6">Семейный врач</option>
+							<option value="7">Гастроэнтеролог</option>
+							<option value="8">Лор (Отоларинголог)</option>
+							<option value="9">Невролог</option>
+							<option value="10">Ортопед</option>
+							<option value="11">Остеопат</option>
+							<option value="12">Патологоанатом</option>
+							<option value="13">Рентгенолог</option>
+							<option value="14">Хирург</option>
+							<option value="15">Уролог</option>
+						</select>
+					</div>
+					<div class="filter-item">
+						<select class="custom-select">
+							<option value="1" selected>Направление</option>
+							<option value="2">Терапия</option>
+							<option value="3">Стоматология</option>
+							<option value="4">Хирургия</option>
+							<option value="5">Неврология</option>
+							<option value="6">Пульмонология</option>
+							<option value="7">Гастроэнтерология</option>
+							<option value="8">Гинекология</option>
+							<option value="9">Урология</option>
+							<option value="10">Проктология</option>
+							<option value="11">Эндокринология</option>
+							<option value="12">Ревматология</option>
+							<option value="13">Кардиология</option>
+							<option value="14">Аллергология</option>
+							<option value="15">Флебология</option>
+							<option value="16">Диагностика, УЗИ и ЭКГ</option>
+						</select>
+					</div>
+					<div class="filter-item">
+						<select class="custom-select">
+							<option value="1" selected>Услуги</option>							
+							<option value="2">Консультация колопроктолога первичная (консультация+пальцевое исследование+назначение лечения)</option>
+							<option value="3">Консультация колопроктолога (повторная)</option>
+							<option value="4">Аноскопия</option>
+							<option value="5">Склерозирование одного геморроидального узла</option>
+							<option value="6">Параанальная блокада</option>
+							<option value="7">Вскрытие и дренирование подкожно-подслизистого парапроктита</option>
+							<option value="8">Компьютерная томография</option>
+							<option value="9">Вскрытие нагноившейся кисты копчика</option>
+							<option value="10">Удаление инородных тел из прямой кишки</option>
+							<option value="11">Иссечение остроконечных кондилом перианальной области</option>
+							<option value="12">Иссечение хронической анальной трещины под местной анестезия</option>
+							<option value="13">Иссечение кисты копчика лазером/ сургидроном.</option>
+							<option value="14">Перевязка ран промежности</option>
+							<option value="15">Консультация хирурга</option>
+							<option value="16">Повторная консультация хиругия</option>
+							<option value="17">Консультация флеболога первичная</option>
+							<option value="18">Консультация флеболога повторная</option>
+							<option value="19">Склеротерапия 1 категория</option>
+							<option value="20">Склеротерапия 2 категория</option>
+							<option value="21">Склеротерапия 3 категория</option>
+							<option value="22">Склеротерапия под Узи контролем</option>
+							<option value="23">Лазерное удаление геморройдальных узлов с прибыванием в стационаре 1–2 дня (первая категория)</option>
+							<option value="24">Лазерное удаление геморройдальных узлов с прибыванием в стационаре 1–2 дня (первая категория)</option>
+							<option value="25">Лазерное удаление геморройдальных узлов с прибыванием в стационаре 1–2 дня (вторая категория)</option>
+							<option value="26">Лазерное удаление геморройдальных узлов с прибыванием в стационаре 1–2 дня (третья категория)</option>
+							<option value="27">Лазерная абляция и иссчение трещины анального канала</option>
+							<option value="28">Лазерное удаление параректального свища</option>
+							<option value="29">Лазерное удаление свища прямой кишки</option>
+							<option value="30">УЗИ брюшной полости</option>
+							<option value="41">УЗИ малого таза</option>
+							<option value="42">УЗИ почек и мочевого пузыря</option>
+							<option value="43">УЗИ молочных желез</option>
+							<option value="44">УЗИ щитовидной железы</option>
+							<option value="45">УЗИ почек</option>
+							<option value="46">УЗИ почек и надпочечников</option>
+							<option value="47">УЗИ почек и надпочечников</option>
+							<option value="48">УЗИ ОБП (органов брюшной области) – печень, жёлчный пузырь, поджелудочная железа, селезёнка</option>
+							<option value="49">УЗДГ артерий нижних конечностей</option>
+							<option value="50">УЗДГ артериовенозной фистулы (АВФ)</option>
+							<option value="51">УЗДГ вен нижних конечностей</option>
+							<option value="52">УЗДГ внутрипочечных артерий</option>
+							<option value="53">УЗДГ магистральных сосудов шеи (МАГ,БЦА)</option>
+							<option value="54">УЗИ лимфоузлов (одна зона)</option>
+							<option value="55">УЗИ забрюшинных лимфоузлов</option>
+							<option value="56">УЗИ передней брюшной стенки</option>
+							<option value="57">УЗИ сосудов брюшной полости</option>
+							<option value="58">УЗИ шейной части пищевода</option>
+							<option value="59">УЗИ надпочечников</option>
+							<option value="60">УЗИ спинномозгового канала</option>
+							<option value="61">Ангиосканирование орбиты (2 глаза)</option>
+							<option value="62">УЗИ лёгких (по показаниям, согласовать с врачом УЗД)</option>
+							<option value="63">УЗИ плевральной полости</option>
+							<option value="64">УЗИ вилочковой железы</option>
+							<option value="65">Определение сердцебиения у плода</option>
+							<option value="66">УЗИ пахового канала</option>
+							<option value="67">УЗИ брюшной полости (печень, жёлчный пузырь, поджелудочная железа, селезёнка) и забрюшинного пространства</option>
+							<option value="68">УЗИ брюшной аорты</option>
+							<option value="69">УЗДГ вен верхних конечностей</option>
+							<option value="70">УЗДГ артерий верхних конечностей</option>
+							<option value="71">УЗДГ подвздошных сосудов</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="wrapperDefault filterResult-wrapper">
+				<div class="filterResult">
+					<div class="filterResult-item">
+						<div class="filterResult-item-img">
+							<picture>
+								<source media="(min-width:768px)" srcset="img/temp-medic-1.webp 1x">
+								<img src="img/temp-medic-2.webp" alt="">
+							</picture>
+						</div>
+						<div class="filterResult-item-details">
+							<div class="filterResult-item-details-header">
+								<div class="filterResult-item-title">Дехисси Муад Альфредович</div>
+								<p>Хирург, проктолог, флеболог, врач УЗИ, кмн</p>
+								<p>Стаж: 29 лет</p>
+							</div>
+							<div class="filterResult-item-details-footer">
+								<p class="fw-700 c-blue">Стоимость приема:</p>
+								<div>Первичный прием: 4 000 руб.</div>
+								<div>Повторный прием: 3 000 руб.</div>
+							</div>
+						</div>
+						<div class="filterResult-item-schedule">
+							<div><time>пн-пт&nbsp;&mdash; 8:00 до&nbsp;16:00</time></div>
+							<div><time>сб-вс&nbsp;&mdash; 9:00 до&nbsp;16:00</time></div>
+							<div>перерыв&nbsp;&mdash; <time>с&nbsp;12:00 до&nbsp;12:30</time></div>
+						</div>
+						<div class="filterResult-item-btns">
+							<a href="" class="btn btn-blue w-100"><span class="btn-txt">Подробнее о враче</span></a>
+							<button class="btn btn-blue w-100" type="button"><span class="btn-txt">Записаться на приём</span></button>
+						</div>
+					</div>
+					<div class="filterResult-item d-none d-md-grid">
+						<div class="filterResult-item-img">
+							<picture>
+								<source media="(min-width:768px)" srcset="img/temp-medic-1.webp 1x">
+								<img src="img/temp-medic-2.webp" alt="">
+							</picture>
+						</div>
+						<div class="filterResult-item-details">
+							<div class="filterResult-item-details-header">
+								<div class="filterResult-item-title">Дехисси Муад Альфредович</div>
+								<p>Хирург, проктолог, флеболог, врач УЗИ, кмн</p>
+								<p>Стаж: 29 лет</p>
+							</div>
+							<div class="filterResult-item-details-footer">
+								<p class="fw-700 c-blue">Стоимость приема:</p>
+								<div>Первичный прием: 4 000 руб.</div>
+								<div>Повторный прием: 3 000 руб.</div>
+							</div>
+						</div>
+						<div class="filterResult-item-schedule">
+							<div><time>пн-пт&nbsp;&mdash; 8:00 до&nbsp;16:00</time></div>
+							<div><time>сб-вс&nbsp;&mdash; 9:00 до&nbsp;16:00</time></div>
+							<div>перерыв&nbsp;&mdash; <time>с&nbsp;12:00 до&nbsp;12:30</time></div>
+						</div>
+						<div class="filterResult-item-btns">
+							<a href="" class="btn btn-blue w-100"><span class="btn-txt">Подробнее о враче</span></a>
+							<button class="btn btn-blue w-100" type="button"><span class="btn-txt">Записаться на приём</span></button>
+						</div>
+					</div>
+					<div class="filterResult-item d-none d-md-grid">
+						<div class="filterResult-item-img">
+							<picture>
+								<source media="(min-width:768px)" srcset="img/temp-medic-1.webp 1x">
+								<img src="img/temp-medic-2.webp" alt="">
+							</picture>
+						</div>
+						<div class="filterResult-item-details">
+							<div class="filterResult-item-details-header">
+								<div class="filterResult-item-title">Дехисси Муад Альфредович</div>
+								<p>Хирург, проктолог, флеболог, врач УЗИ, кмн</p>
+								<p>Стаж: 29 лет</p>
+							</div>
+							<div class="filterResult-item-details-footer">
+								<p class="fw-700 c-blue">Стоимость приема:</p>
+								<div>Первичный прием: 4 000 руб.</div>
+								<div>Повторный прием: 3 000 руб.</div>
+							</div>
+						</div>
+						<div class="filterResult-item-schedule">
+							<div><time>пн-пт&nbsp;&mdash; 8:00 до&nbsp;16:00</time></div>
+							<div><time>сб-вс&nbsp;&mdash; 9:00 до&nbsp;16:00</time></div>
+							<div>перерыв&nbsp;&mdash; <time>с&nbsp;12:00 до&nbsp;12:30</time></div>
+						</div>
+						<div class="filterResult-item-btns">
+							<a href="" class="btn btn-blue w-100"><span class="btn-txt">Подробнее о враче</span></a>
+							<button class="btn btn-blue w-100" type="button"><span class="btn-txt">Записаться на приём</span></button>
+						</div>
+					</div>
+				</div>
+				<div class="paging">
+					<nav>
+						<a href="" class="paging-page paging-page-prev"></a>
+						<a href="" class="paging-page active">1</a>
+						<a href="" class="paging-page">2</a>
+						<a href="" class="paging-page">...</a>
+						<a href="" class="paging-page">11</a>
+						<a href="" class="paging-page">10</a>
+						<a href="" class="paging-page paging-page-next"></a>
+					</nav>
+				</div>
+			</div>
+			<!-- =============== -->
+			<!-- Ничего не найдено -->
+			<!--				
+				<div class="wrapperDefault filterResult-wrapper">
+					<div class="filterResult filterResult-notfound">
+						Ничего не найдено
+					</div>
+				</div>
+			 -->
+			 <!-- /Ничего не найдено -->
+			 <!-- =============== -->
+		</section>
+
+		<section class="section-wrapper bg-7 paddsY">
+			<div class="wrapperDefault gutters-extend">
+				<div class="row">
+					<div class="col-12 col-lg-6">
+						<div class="h1 c-white">
+							Оставьте контакты и&nbsp;мы&nbsp;вам перезвоним
+						</div>
+						<p class="p c-white col-lg-6 mb-3">
+							Заполните форму и&nbsp;наш специалист свяжется с&nbsp;вами в&nbsp;течение 30&nbsp;минут
+						</p>
+					</div>
+					<div class="col-12 col-lg-6">
+						<form class="form form-style2">
+							<div class="form-item">
+								<div class="form-item-inputContainer">
+									<input class="form-item-input" type="text" placeholder=" ">
+									<div class="form-item-placeholder">Ваше имя</div>
+								</div>
+							</div>
+							<div class="form-item">
+								<div class="form-item-inputContainer">
+									<input class="form-item-input" type="text" placeholder=" ">
+									<div class="form-item-placeholder">Номер телефона</div>
+								</div>
+							</div>
+							<div class="form-item">							
+								<div class="form-item-boxContainer">
+									<input id="conf" type="checkbox" value="1" name="" class="form-item-inputCheckbox">
+									<span class="checkbox"></span>
+									<label for="conf" class="checkbox-content">
+										<span class="checkbox-txt fs-10 c-white">
+											Я согласен с <a href="" class="c-white uline">политикой конфиденциальности</a>
+										</span>
+									</label>
+								</div>	
+							</div>
+							<button type="button" class="btn btn-white btn-submit"><span class="btn-txt">Оставить заявку</span></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-wrapper section-articles">
+			<div class="wrapperDefault">
+				<div class="h1">Статьи по теме</div>
+				<div class="articles">
+					<article class="articlePreview">
+						<div class="articlePreview-img">
+							<img src="img/temp-article-thumb-1.webp" alt="" />
+						</div>
+						<div class="articlePreview-cont">
+							<h4 class="articlePreview-title"><a href="">Что особенного вас ждет в нашем новом филиале в Бутово?</a></h4>
+							<div class="articlePreview-text">								
+								<p>Lorem ipsum dolor sit amet consectetur. 
+									Mattis vitae vel scelerisque tristique erat. Varius ac maecenas euismod turpis. Nulla magna hendrerit pellentesque gravida vulputate faucibus in ullamcorper. Eu egestas blandit urna aliquet eleifend risus pellentesque purus lorem. Eget congue ullamcorper aenean id. Quisque quis enim in aliquet...</p>
+							</div>
+							<div class="articlePreview-date">08.02.2024</div>
+						</div>
+					</article>
+					<article class="articlePreview">
+						<div class="articlePreview-img">
+							<img src="img/temp-article-thumb-2.webp" alt="" />
+						</div>
+						<div class="articlePreview-cont">
+							<h4 class="articlePreview-title"><a href="">Что особенного вас ждет в нашем новом филиале в Бутово?</a></h4>
+							<div class="articlePreview-text">								
+								<p>Lorem ipsum dolor sit amet consectetur. 
+									Mattis vitae vel scelerisque tristique erat. Varius ac maecenas euismod turpis. Nulla magna hendrerit pellentesque gravida vulputate faucibus in ullamcorper. Eu egestas blandit urna aliquet eleifend risus pellentesque purus lorem. Eget congue ullamcorper aenean id. Quisque quis enim in aliquet...</p>
+							</div>
+							<div class="articlePreview-date">08.02.2024</div>
+						</div>
+					</article>
+					<article class="articlePreview">
+						<div class="articlePreview-img">
+							<img src="img/temp-article-thumb-1.webp" alt="" />
+						</div>
+						<div class="articlePreview-cont">
+							<h4 class="articlePreview-title"><a href="">Что особенного вас ждет в нашем новом филиале в Бутово?</a></h4>
+							<div class="articlePreview-text">								
+								<p>Lorem ipsum dolor sit amet consectetur. 
+									Mattis vitae vel scelerisque tristique erat. Varius ac maecenas euismod turpis. Nulla magna hendrerit pellentesque gravida vulputate faucibus in ullamcorper. Eu egestas blandit urna aliquet eleifend risus pellentesque purus lorem. Eget congue ullamcorper aenean id. Quisque quis enim in aliquet...</p>
+							</div>
+							<div class="articlePreview-date">08.02.2024</div>
+						</div>
+					</article>
+				</div>	
+				<div class="paging paging-blue">
+					<nav>
+						<a href="" class="paging-page paging-page-prev"></a>
+						<a href="" class="paging-page active">1</a>
+						<a href="" class="paging-page">2</a>
+						<a href="" class="paging-page">...</a>
+						<a href="" class="paging-page">11</a>
+						<a href="" class="paging-page">10</a>
+						<a href="" class="paging-page paging-page-next"></a>
+					</nav>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-wrapper section-swiper">
+			<div class="wrapperDefault">
+				<div class="swiper-oneScreen swiper-container" init="false">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/banner-1.webp" class="objectFit-cover" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/banner-1.webp" class="objectFit-cover" alt="">
+						</div>
+					</div>
+					<div class="swiper-pagination-dots"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-wrapper section-faq paddsY bg-green">
+			<div class="wrapperDefault">
+				<div class="h1 c-white">
+					Ответы на часто
+					<div class="subTitle-h1">задаваемые вопросы</div>
+				</div>
+				<div class="accordion" id="accordion-2">
+				
+					<div class="accordion-item">
+						<h3 class="accordion-header">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accitem11"
+								aria-expanded="true" aria-controls="accitem11">
+								Lorem ipsum dolor sit amet consectetur?
+							</button>
+						</h3>
+						<div id="accitem11" class="accordion-collapse collapse show" data-bs-parent="#accordion-2">
+							<div class="accordion-body">
+								Lorem ipsum dolor sit amet consectetur. Euismod et orci erat laoreet erat sit. Ultrices sit aliquet potenti tempus. Vel sed et id nisl facilisis tortor. Tincidunt penatibus fermentum leo lacus sed nunc. Lorem ipsum dolor sit amet consectetur. Euismod et orci erat laoreet erat sit. Ultrices sit aliquet potenti tempus. Vel sed et id nisl facilisis tortor. Tincidunt penatibus fermentum leo lacus sed nunc.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h3 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accitem12"
+								aria-expanded="false" aria-controls="accitem12">
+								Lorem ipsum dolor sit amet consectetur?
+							</button>
+						</h3>
+						<div id="accitem12" class="accordion-collapse collapse" data-bs-parent="#accordion-2">
+							<div class="accordion-body">
+								Lorem ipsum dolor sit amet consectetur. Euismod et orci erat laoreet erat sit. Ultrices sit aliquet potenti tempus. Vel sed et id nisl facilisis tortor. Tincidunt penatibus fermentum leo lacus sed nunc. Lorem ipsum dolor sit amet consectetur. Euismod et orci erat laoreet erat sit. Ultrices sit aliquet potenti tempus. Vel sed et id nisl facilisis tortor. Tincidunt penatibus fermentum leo lacus sed nunc.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-wrapper bg-8 paddsY">
+			<div class="wrapperDefault gutters-extend">
+				<div class="row">
+					<div class="col-12 col-lg-6">
+						<div class="h1 c-white">
+							Остались <br />вопросы?
+						</div>
+						<p class="p c-white col-lg-6 mb-3">
+							Заполните форму и&nbsp;наш специалист свяжется с&nbsp;вами в&nbsp;течение 30&nbsp;минут
+						</p>
+					</div>
+					<div class="col-12 col-lg-6">
+						<form class="form form-style2">
+							<div class="form-item">
+								<div class="form-item-inputContainer">
+									<input class="form-item-input" type="text" placeholder=" ">
+									<div class="form-item-placeholder">Ваше имя</div>
+								</div>
+							</div>
+							<div class="form-item">
+								<div class="form-item-inputContainer">
+									<input class="form-item-input" type="text" placeholder=" ">
+									<div class="form-item-placeholder">Номер телефона</div>
+								</div>
+							</div>
+							<div class="form-item">
+								<div class="form-item-inputContainer">
+									<input class="form-item-input" type="text" placeholder=" ">
+									<div class="form-item-placeholder">Ваш вопрос</div>
+								</div>
+							</div>
+							<div class="form-item">							
+								<div class="form-item-boxContainer">
+									<input checked id="conf" type="checkbox" value="1" name="" class="form-item-inputCheckbox">
+									<span class="checkbox"></span>
+									<label for="conf" class="checkbox-content">
+										<span class="checkbox-txt fs-10 c-white">
+											Я согласен с <a href="" class="c-white uline">политикой конфиденциальности</a>
+										</span>
+									</label>
+								</div>	
+							</div>
+							<button type="button" class="btn btn-white btn-submit"><span class="btn-txt">Оставить заявку</span></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-wrapper section-licenses">
+			<div class="wrapperDefault">
+				<div class="h1">Лицензии и сертификаты</div>
+				<div class="licenses">
+					<div class="licenses-item">
+						<div class="licenses-item-title">
+							Лицензия на изготовление оборудования для медицинского учреждения
+						</div>
+							<figure class="licenses-item-img">
+								<img src="img/license-1.webp" alt="" />
+							</figure>
+					</div>
+					<div class="licenses-item">
+						<div class="licenses-item-title">
+							Лицензия на изготовление оборудования для медицинского учреждения
+						</div>
+							<figure class="licenses-item-img">
+								<img src="img/license-1.webp" alt="" />
+							</figure>
+					</div>
+					<div class="licenses-item">
+						<div class="licenses-item-title">
+							Лицензия на изготовление оборудования для медицинского учреждения
+						</div>
+							<figure class="licenses-item-img">
+								<img src="img/license-1.webp" alt="" />
+							</figure>
+					</div>
+					<div class="licenses-item">
+						<div class="licenses-item-title">
+							Лицензия на изготовление оборудования для медицинского учреждения
+						</div>
+							<figure class="licenses-item-img">
+								<img src="img/license-1.webp" alt="" />
+							</figure>
+					</div>
+					<div class="licenses-item">
+						<div class="licenses-item-title">
+							Лицензия на изготовление оборудования для медицинского учреждения
+						</div>
+							<figure class="licenses-item-img">
+								<img src="img/license-1.webp" alt="" />
+							</figure>
+					</div>
+					<div class="licenses-item">
+						<div class="licenses-item-title">
+							Лицензия на изготовление оборудования для медицинского учреждения
+						</div>
+							<figure class="licenses-item-img">
+								<img src="img/license-1.webp" alt="" />
+							</figure>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<footer class="footerMain">
+	<div class="wrapperDefault">
+		<div class="footerMain-inner">
+			<div class="footerMain-logo">
+				<img src="img/logo-footer.webp" alt="" width="250" />
+			</div>
+			<div class="footerMain-menu">
+				<nav>
+					<a href="">О клинике</a>
+					<a href="">Врачи</a>
+					<a href="">Отзывы</a>
+					<a href="">Услуги и прайс</a>
+					<a href="">Карта сайта</a>
+				</nav>
+			</div>
+			<div class="footerMain-blind blindVersion-link">
+				<div class="footerMain-blind-ico blindVersion-ico impaired-skip"></div>
+				<div class="headerMain-blind-txt blindVersion-txt visibleFor-normal">
+					Версия для слабовидящих
+				</div>
+				<div class="headerMain-blind-txt blindVersion-txt visibleFor-impaired">
+					Обычная версия
+				</div>
+			</div>
+			<div class="footerMain-phone">
+				<a href="tel:+74952110803">+7 (495) 211-08-03</a>
+			</div>
+			<div class="footerMain-address">
+				<p>
+					Москва, метро Цветной бульвар <br />
+					Улица Самотёчная, 5&nbsp;(этаж&nbsp;2)
+				</p>
+				<p>С&nbsp;09:00 до&nbsp;21:00 ежедневно</p>
+			</div>
+			<div class="footerMain-socials visibleFor-impaired">
+				<div class="footerMain-socials-inner">
+					<p><b>E-mail:</b> <a href="mailto:info@mypromed.ru">info@mypromed.ru</a></p>
+					<p><b>Телефон:</b> <a href="tel:+74952110803">+7 (495) 211-08-03</a></p>
+					<p><b>Социальные сети:</b> <a href="">ВКонтакте</a>, <a href="">YouTube</a>, <a href="">Дзен</a></p>
+					<p><b>Мессенджеры:</b> WhatsApp, Telegram</p>
+				</div>
+			</div>
+			<div class="footerMain-socials visibleFor-normal">
+				<a href="mailto:info@mypromed.ru" class="footerMain-socials-item email">
+					<div class="footerMain-socials-item-img">
+						<img src="img/email.svg" alt="">
+					</div>
+					<div class="footerMain-socials-item-txt">info@mypromed.ru</div>
+				</a>
+				<a href="" class="footerMain-socials-item wt">
+					<div class="footerMain-socials-item-img">
+						<img src="img/wt.svg" alt="">
+					</div>
+				</a>
+				<a href="" class="footerMain-socials-item tg">
+					<div class="footerMain-socials-item-img">
+						<img src="img/tg.svg" alt="">
+					</div>
+				</a>
+				<a href="" class="footerMain-socials-item vk">
+					<div class="footerMain-socials-item-img">
+						<img src="img/vk.svg" alt="">
+					</div>
+				</a>
+				<a href="" class="footerMain-socials-item yt">
+					<div class="footerMain-socials-item-img">
+						<img src="img/yt.svg" alt="">
+					</div>
+				</a>
+				<a href="" class="footerMain-socials-item yd">
+					<div class="footerMain-socials-item-img">
+						<img src="img/yd.svg" alt="">
+					</div>
+				</a>
+			</div>
+			<div class="footerMain-map">
+				<img src="img/temp_map.webp" alt="" />
+				<a href="" class="btn btn-white w-100 mt-2 d-lg-none"><span class="btn-txt">Смотреть на Яндекс.Картах</span></a>
+			</div>
+			<div class="footerMain-confident">
+				<p><a href="">Политика в&nbsp;отношении обработки персональных данных и&nbsp;сведения о&nbsp;реализуемых требованиях к&nbsp;защите персональных данных</a></p>
+				<p><a href="">Сводные данные о&nbsp;результатах проведения СОУТ</a></p>
+			</div>
+			<div class="footerMain-gerb">
+				<img src="img/gerb.webp" alt="">
+				<p>Независимая оценка качества оказания услуг медицинским организациям
+					<a href="">Участвовать в голосовании</a></p>
+			</div>
+			<div class="footerMain-pays">
+				<div class="footerMain-pays-inner">
+					<div class="footerMain-pays-title"><b>Мы принимаем к оплате: </b>
+						<span class="footerMain-pays-cards visibleFor-impaired">
+							<span>МИР,</span>
+							<span>Visa,</span>
+							<span>MasterCard,</span>
+							<span>UnionPay</span>
+						</span>
+					</div>
+					<div class="footerMain-pays-item mir">
+						<img src="img/card-mir.svg" alt="">
+					</div>
+					<div class="footerMain-pays-item visa">
+						<img src="img/card-visa.svg" alt="">
+					</div>
+					<div class="footerMain-pays-item mc">
+						<img src="img/card-mc.svg" alt="">
+					</div>
+					<div class="footerMain-pays-item up">
+						<img src="img/card-up.svg" alt="">
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<div class="footerMain-bottom">
+		<div class="wrapperDefault">
+			<div class="row">
+				<div class="col-12 col-lg-4">
+					© 2013 - 2024 Клиника “Здоровая система”,  <br />
+					Лицензия № 0000-000000-00/00000000 от 00.00.0000 г.
+				</div>
+				<div class="col-12 col-lg-3">
+					Имеются противопоказания необходимо проконсультироваться со специалистом
+				</div>
+				<div class="col-12 col-lg-4">
+					Айдентика и дизайн wearegeek.ru  <br />
+					Программирование и продвижение 6-sense.pro
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- popup Вакансия -->
+<div class="modal modal-vacancy fade" tabindex="-1" id="modal-vacancy">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="modal-title h1">Оставьте контакты и&nbsp;мы&nbsp;вам перезвоним</div>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+			</div>
+			<div class="modal-body">
+				<p>Заполните форму и наш специалист свяжется с вами в течение 30 минут</p>
+				<form class="form form-popup">
+					<div class="form-item">
+						<div class="form-item-inputContainer">
+							<input class="form-item-input" type="text" placeholder=" ">
+							<div class="form-item-placeholder">Ваше имя</div>
+						</div>
+					</div>
+					<div class="form-item">
+						<div class="form-item-inputContainer">
+							<input class="form-item-input" type="text" placeholder=" ">
+							<div class="form-item-placeholder">Номер телефона</div>
+						</div>
+					</div>
+					<div class="form-item">
+						<div class="form-item-inputContainer">
+							<textarea class="form-item-input" placeholder=" "></textarea>
+							<div class="form-item-placeholder">Сопроводительное письмо</div>
+						</div>
+					</div>
+					<div class="form-item form-item-attach mt-2 mb-5">
+						<label class="form-item-label" for="attachFileInput">Прикрепить резюме</label>	
+						<div class="form-item-input-wrap">
+							<input id="attachFileInput" class="form-item-input" type="file" accept=".doc,.docx, .pdf" onchange="attachFile.get(this, 5)">
+						</div>
+						<div class="form-item-attach-error"></div>
+					</div>	
+					<div class="form-item">							
+						<div class="form-item-boxContainer">
+							<input id="vacancyCheck" type="checkbox" value="1" name="" class="form-item-inputCheckbox">
+							<span class="checkbox"></span>
+							<label for="vacancyCheck" class="checkbox-content">
+								<span class="checkbox-txt fs-10 c-white">
+									Я согласен с <a href="" class="c-white uline">политикой конфиденциальности</a>
+								</span>
+							</label>
+						</div>	
+					</div>
+					<button type="button" class="btn btn-white btn-submit mt-2"><span class="btn-txt">Отправить заявку</span></button>
+				</form>
+			</div>			
+		</div>
+	</div>
+</div>
+
+<!-- popup Контакт -->
+<div class="modal modal-contact fade" tabindex="-1" id="modal-contact">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="modal-title h1">Оставьте контакты и&nbsp;мы&nbsp;вам перезвоним</div>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+			</div>
+			<div class="modal-body">
+				<p>Заполните форму и наш специалист свяжется с вами в течение 30 минут</p>
+				<form class="form form-popup">
+					<div class="form-item">
+						<div class="form-item-inputContainer">
+							<input class="form-item-input" type="text" placeholder=" ">
+							<div class="form-item-placeholder">Ваше имя</div>
+						</div>
+					</div>
+					<div class="form-item">
+						<div class="form-item-inputContainer">
+							<input class="form-item-input" type="text" placeholder=" ">
+							<div class="form-item-placeholder">Номер телефона</div>
+						</div>
+					</div>										
+					<div class="form-item">							
+						<div class="form-item-boxContainer">
+							<input id="contactCheck" type="checkbox" value="1" name="" class="form-item-inputCheckbox">
+							<span class="checkbox"></span>
+							<label for="contactCheck" class="checkbox-content">
+								<span class="checkbox-txt fs-10 c-white">
+									Я согласен с <a href="" class="c-white uline">политикой конфиденциальности</a>
+								</span>
+							</label>
+						</div>	
+					</div>
+					<button type="button" class="btn btn-white btn-submit mt-2"><span class="btn-txt">Отправить заявку</span></button>
+				</form>
+			</div>			
+		</div>
+	</div>
+</div>
+
+<!-- всплывающая подсказка -->
+<div class="modal modal-tooltip fade" tabindex="-1" id="modal-tooltip">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+			</div>
+			<div class="modal-body">
+				<!-- tooptip content here  -->
+				<!-- content is added from common.js -->
+			</div>			
+		</div>
+	</div>
+</div>
+
+<script defer src="js/bootstrap.min.js"></script>
+<script defer type="text/javascript" src="js/custom-select.min.js"></script>
+<link rel="stylesheet" href="css/swiper.min.css" />
+<script defer type="text/javascript" src="js/swiper.min.js"></script>
+
+<script defer type="text/javascript" src="js/common.js"></script>
+	</div>
+
+</body>
+
+</html>

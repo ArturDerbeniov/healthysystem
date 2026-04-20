@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="color-scheme" content="only light">
+	<title>Здоровая система</title>
+
+	<link rel="stylesheet" href="css/bootstrap523.min.css" />
+	<link rel="stylesheet" href="css/custom-select.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+	<div class="body-inner">
+
+		<header class="headerMain" id="headerMain">
+	<div class="wrapperDefault">
+		<div class="headerMain-inner">
+			<div class="headerMain-logo" >
+				<span class="logo"><img src="img/logo.webp" alt=""></span>
+			</div>
+			<div class="headerMain-time">
+				С 09:00 до 21:00 ежедневно
+			</div>
+			<div class="headerMain-address">
+				Москва, метро Цветной бульвар <br />
+				Улица Самотёчная, 5 (этаж 2)
+			</div>
+			<div class="headerMain-phone">
+				<a href="tel:+74952110803">+7 (495) 211-08-03</a>
+			</div>
+			<div class="btn headerMain-blind blindVersion-link visibleFor-impaired">
+				<div class="headerMain-blind-txt blindVersion-txt">
+					Обычная версия
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="headerMain-menuLine-intersection visibleFor-normal"></div>
+	<div class="headerMain-menuLine-outer">
+
+		<div class="headerMain-menuLine">
+			<div class="wrapperDefault">
+				<div class="headerMain-menuLine-inner">
+					<div class="headerMain-menuMobile">
+						<nav class="headerMain-menu">
+							<a href="">О клинике</a>
+							<a href="">Врачи</a>
+							<a href="">Отзывы</a>
+							<a href="">Услуги и прайс</a>
+						</nav>
+					</div>
+					<div class="headerMain-blind blindVersion-link visibleFor-normal">
+						<div class="headerMain-blind-ico blindVersion-ico impaired-skip"></div>
+						<div class="headerMain-blind-txt blindVersion-txt visibleFor-normal">
+							Версия для слабовидящих
+						</div>
+						<div class="headerMain-blind-txt blindVersion-txt visibleFor-impaired">
+							Обычная версия
+						</div>
+					</div>
+					<div class="headerMain-search">
+						<button type="button" class="headerMain-search-ico impaired-skip" value="Поиск"></button>
+						<button type="button" class="headerMain-search-close impaired-skip" value="Закрыть поиск"></button>
+						<div class="headerMain-search-cont">
+							<div class="headerMain-search-field">
+								<input type="text" placeholder="Найти..." />
+							</div>
+							<ul class="headerMain-search-result">
+								<li><a href="" class="headerMain-search-result-link">Консультация врача Константинова Константина Контстантиновича</a>
+									<span class="headerMain-search-result-dir">Услуга</span>
+								</li>
+								<li><a href="" class="headerMain-search-result-link">Консультация врача</a>
+									<span class="headerMain-search-result-dir">Врач</span>
+								</li>
+								<li><a href="" class="headerMain-search-result-link">Консультация врача</a>
+									<span class="headerMain-search-result-dir">Врач</span>
+								</li>
+								<li><a href="" class="headerMain-search-result-link">Консультация врача</a>
+									<span class="headerMain-search-result-dir">Врач</span>
+								</li>
+								<li><a href="" class="headerMain-search-result-link">Консультация врача</a>
+									<span class="headerMain-search-result-dir">Врач</span>
+								</li>
+							</ul>
+	
+						</div>
+					</div>				
+					<button type="button" class="btn btn-green headerMain-signup"><span class="btn-txt" data-bs-toggle="modal" data-bs-target="#modal-contact">Записаться на приём</span></button>
+					<button type="button" class="headerMain-burger impaired-skip" value="Мобильное меню"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="headerMain-assistPnl-intersection visibleFor-impaired"></div>
+	<div class="headerMain-assistPnl-outer visibleFor-impaired">
+		<div class="headerMain-assistPnl">
+			<div class="wrapperDefault">
+				<div class="assistPnl">
+					<div class="assistPnl-btnGoto">
+						<button type="button" onclick="document.getElementById('headerMain').scrollIntoView({behavior:'smooth'})" type="button" class="btn btn-white btn-onWhite btn-color-black"><span class="btn-txt">К содержанию</span></button>
+					</div>
+					<div class="assistPnl-font">
+						<div class="btn-group-title assistPnl-font-title">Шрифт</div>
+						<div class="btn-group select-fontSize">
+							<button type="button" class="select-fontSize-normal fs-14 active" data-size="16" data-namesize="normal" data-index="1" title="Размер шрифта нормальный">A</button>
+							<button type="button" class="select-fontSize-medium fs-22" data-size="20" data-namesize="medium" data-index="2" title="Размер шрифта увеличенный">A</button>
+							<button type="button" class="select-fontSize-large fs-30" data-size="24" data-namesize="large" data-index="3" title="Размер шрифта большой">A</button>
+						</div>
+					</div>
+					<div class="assistPnl-color">				
+						<div class="btn-group-title assistPnl-font-title">Цвет</div>
+						<div class="btn-group select-colorScheme">
+							<button type="button" class="select-color-c1 active" data-index="1" data-scheme="blackOnWhite" title="Цветовая схема №1" style="color:#000 !important">Ц</button>
+							<button type="button" class="select-color-c2" data-index="2" data-scheme="whiteOnBlack" title="Цветовая схема №2" style="color:#fff !important">Ц</button>
+							<button type="button" class="select-color-c3" data-index="3" data-scheme="blueOnBlue" title="Цветовая схема №3" style="color:#2E6091 !important">Ц</button>
+							<button type="button" class="select-color-c4" data-index="4" data-scheme="grayOnSand" title="Цветовая схема №4" style="color:#626261 !important">Ц</button>
+							<button type="button" class="select-color-c5" data-index="5" data-scheme="limeOnBrown" title="Цветовая схема №5" style="color:#9CDC4B !important">Ц</button>
+						</div>
+					</div>
+					<div class="assistPnl-player">				
+						<div class="btn-group player-mode">
+							<button type="button" class="player-mode-all" title="Озвучить всё">Озвучить всё</button>
+							<button type="button" class="player-mode-play" title="пуск"></button>
+							<button type="button" class="player-mode-pause" title="пауза"></button>
+							<button type="button" class="player-mode-stop" title="стоп"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+		<section class="section-wrapper section-top">
+			<div class="wrapperDefault">
+				<h1>Карта сайта</h1>				
+				<ul class="map-list">
+					<li>
+						<a href>Главная</a>
+					</li>
+					<li><a href="">О клинике</a>
+						<ul>
+							<li><a href="">Отзывы</a></li>
+							<li><a href="">Вакансии</a></li>
+							<li><a href="">Контакты</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="map-list map-list-2col">
+					<li><a href="">Услуги</a>
+						<ul>
+							<li><a href="">Хирургия, проктология, флебология</a>
+								<ul>
+									<li><a href="">Консультация колопроктолога первичная (консультация+пальцевое исследование+назначение лечения)</a></li>
+									<li><a href="">Консультация колопроктолога (повторная)</a></li>
+									<li><a href="">Аноскопия</a></li>
+									<li><a href="">Склерозирование одного геморроидального узла</a></li>
+									<li><a href="">Параанальная блокада</a></li>
+									<li><a href="">Вскрытие и дренирование подкожно-подслизистого парапроктита</a></li>
+									<li><a href="">Компьютерная томография</a></li>
+									<li><a href="">Вскрытие нагноившейся кисты копчика</a></li>
+									<li><a href="">Удаление инородных тел из прямой кишки</a></li>
+									<li><a href="">Иссечение остроконечных кондилом перианальной области</a></li>
+									<li><a href="">Иссечение хронической анальной трещины под местной анестезия</a></li>
+									<li><a href="">Иссечение кисты копчика лазером/ сургидроном.</a></li>
+									<li><a href="">Перевязка ран промежности</a></li>
+									<li><a href="">Консультация хирурга</a></li>
+									<li><a href="">Повторная консультация хиругия</a></li>
+									<li><a href="">Консультация флеболога первичная</a></li>
+									<li><a href="">Консультация флеболога повторная</a></li>
+									<li><a href="">Склеротерапия 1 категория</a></li>
+									<li><a href="">Склеротерапия 2 категория</a></li>
+									<li><a href="">Склеротерапия 3 категория</a></li>
+									<li><a href="">Склеротерапия под Узи контролем</a></li>
+									<li><a href="">Лазерное удаление геморройдальных узлов с прибыванием в стационаре 1-2 дня (первая категория)</a></li>
+									<li><a href="">Лазерное удаление геморройдальных узлов с прибыванием в стационаре 1-2 дня (вторая категория)</a></li>
+									<li><a href="">Лазерное удаление геморройдальных узлов с прибыванием в стационаре 1-2 дня (третья категория)</a></li>
+									<li><a href="">Лазерная абляция и иссчение трещины анального канала</a></li>
+									<li><a href="">Лазерное удаление параректального свища</a></li>
+									<li><a href="">Лазерное удаление свища прямой кишки</a></li>
+									<li><a href="">УЗИ брюшной полости</a></li>
+									<li><a href="">УЗИ малого таза</a></li>
+									<li><a href="">УЗИ почек и мочевого пузыря</a></li>
+									<li><a href="">УЗИ молочных желез</a></li>
+									<li><a href="">УЗИ щитовидной железы</a></li>
+									<li><a href="">УЗИ почек</a></li>
+									<li><a href="">УЗИ почек и надпочечников</a></li>
+									<li><a href="">УЗИ ОБП (органов брюшной области) – печень, желчный пузырь, поджелудочная железа, селезенка</a></li>
+									<li><a href="">УЗДГ артерий нижних конечностей</a></li>
+									<li><a href="">УЗДГ артериовенозной фистулы (АВФ)</a></li>
+									<li><a href="">УЗДГ вен нижних конечностей</a></li>
+									<li><a href="">УЗДГ внутрипочечных артерий</a></li>
+									<li><a href="">УЗДГ магистральных сосудов шеи (МАГ,БЦА)</a></li>
+									<li><a href="">УЗИ лимфоузлов (одна зона)</a></li>
+									<li><a href="">УЗИ забрюшинных лимфоузлов</a></li>
+									<li><a href="">УЗИ передней брюшной стенки</a></li>
+									<li><a href="">УЗИ сосудов брюшной полости</a></li>
+									<li><a href="">УЗИ шейной части пищевода</a></li>
+									<li><a href="">УЗИ надпочечников</a></li>
+									<li><a href="">УЗИ коленного сустава</a></li>
+									<li><a href="">УЗИ спинномозгового канала</a></li>
+									<li><a href="">Ангиосканирование орбиты (2 глаза)</a></li>
+									<li><a href="">УЗИ легких (по показаниям, согласовать с врачом УЗД)</a></li>
+									<li><a href="">УЗИ плевральной полости</a></li>
+									<li><a href="">УЗИ вилочковой железы</a></li>
+									<li><a href="">Определение сердцебиения у плода</a></li>
+									<li><a href="">УЗИ пахового канала</a></li>
+									<li><a href="">УЗИ брюшной полости (печень, желчный пузырь, поджелудочная железа, селезенка) и забрюшинного пространства</a></li>
+									<li><a href="">УЗИ брюшной аорты</a></li>
+									<li><a href="">УЗДГ вен верхних конечностей</a></li>
+									<li><a href="">УЗДГ артерий верхних конечностей</a></li>
+									<li><a href="">УЗДГ подвздошных сосудов</a></li>
+									<li><a href="">Дуплексное сканирование — Артерии и вены верхних конечностей</a></li>
+									<li><a href="">Дуплексное сканирование — Артерии и вены нижних конечностей</a></li>
+									<li><a href="">Пункционная биопсия суставов</a></li>
+									<li><a href="">Пункционная биопсия щитовидной железы</a></li>
+									<li><a href="">Пункционная биопсия молочных желез</a></li>
+									<li><a href="">Пункционная биопсия кисты</a></li>
+									<li><a href="">Пункционная биопсия лимфоузлов</a></li>
+									<li><a href="">Пункционная биопсия мягких тканей</a></li>
+									<li><a href="">Пункционная биопсия новообразования</a></li>
+									<li><a href="">Пункционная биопсия щитовидной и молочной желез под УЗИ-контролем</a></li>
+									<li><a href="">УЗИ мягких тканей 1 зона</a></li>
+									<li><a href="">Панч-биопсия 1 штука (без стоимости гистологии)</a></li>
+									<li><a href="">PRP 1 пробирка</a></li>
+									<li><a href="">PRP 2 пробирки</a></li>
+									<li><a href="">PRP 2 пробирки грыжа диска под узи контролем</a></li>
+									<li><a href="">УЗИ тазобедренного сустава 1 сустав</a></li>
+									<li><a href="">УЗИ лонного сочленения</a></li>
+									<li><a href="">УЗИ свища</a></li>
+									<li><a href="">УЗИ плечевого сустава (1 сустав)</a></li>
+									<li><a href="">УЗИ кисти одна									</a></li>
+								</ul>
+							</li>
+							<li><a href="">Терапия</a>
+								<ul>
+									<li><a href="">Название услуги</a></li>
+									<li><a href="">Название услуги</a></li>
+								</ul>
+							</li>
+							<li><a href="">Пульмонология</a>
+								<ul>
+									<li><a href="">Название услуги</a></li>
+									<li><a href="">Название услуги</a></li>
+								</ul>
+							</li>
+							<li><a href="">Кардиология</a>
+								<ul>
+									<li><a href="">Название услуги</a></li>
+									<li><a href="">Название услуги</a></li>
+								</ul>
+							</li>
+							<li><a href="">Аллергология</a>
+								<ul>
+									<li><a href="">Название услуги</a></li>
+									<li><a href="">Название услуги</a></li>
+								</ul>
+							</li>
+							<li><a href="">Диагностика, УЗИ и ЭКГ</a>
+								<ul>
+									<li><a href="">Название услуги</a></li>
+									<li><a href="">Название услуги</a></li>
+								</ul>
+							</li>					
+							<li><a href="">Стоматология</a>
+								<ul>
+									<li><a href="">Приём (осмотр, консультация) врача-стоматолога, первичная</a></li>
+									<li><a href="">Приём (осмотр, консультация) врача-стоматолога, повторная</a></li>
+									<li><a href="">Осмотр полости рта с помощью дополнительных инструментов</a></li>
+									<li><a href="">Аппликационная анестезия</a></li>
+									<li><a href="">Инфильтрационная анестезия</a></li>
+									<li><a href="">Проводниковая анестезия</a></li>
+									<li><a href="">Компьютерная томография</a></li>
+									<li><a href="">Ортопантомограмма</a></li>
+									<li><a href="">Лечение кариеса</a></li>
+									<li><a href="">Восстановление зуба пломбой</a></li>
+									<li><a href="">Наложение временной пломбы</a></li>
+									<li><a href="">Избирательное полирование зуба</a></li>
+									<li><a href="">Трепанация зуба, искусственной коронки</a></li>
+									<li><a href="">Инструментальная и медикаментозная обработка корневого канала</a></li>
+									<li><a href="">Пломбирование корневого канала зуба</a></li>
+									<li><a href="">Закрытие перфорации</a></li>
+									<li><a href="">Удаление внутриканального штифта/ вкладки</a></li>
+									<li><a href="">Удаление наддесневых и поддесневых зубных отложений</a></li>
+									<li><a href="">Комплексная профессиональная гигиена полости рта и зубов</a></li>
+									<li><a href="">Удаление временного зуба</a></li>
+									<li><a href="">Удаление постоянного зуба</a></li>
+									<li><a href="">Резекция верхушки корня зуба</a></li>
+									<li><a href="">Лоскутная операция в полости рта</a></li>
+									<li><a href="">Иссечение новообразования мягких тканей</a></li>
+									<li><a href="">Пластика уздечки языка</a></li>
+									<li><a href="">Пластика уздечки губы</a></li>
+									<li><a href="">Вскрытие подслизистого или поднадкостничного очага воспаления в полости рта</a></li>
+									<li><a href="">Наложение повязки при операциях в полости рта</a></li>
+									<li><a href="">Внутрикостная дентальная имплантация</a></li>
+									<li><a href="">Удаление имплантата, трансплантата</a></li>
+									<li><a href="">Костная пластика челюстно-лицевой области</a></li>
+									<li><a href="">Остеопластика</a></li>
+									<li><a href="">Протезирование зуба с использованием имплантата</a></li>
+									<li><a href="">Восстановление зуба коронкой							</a></li>
+								</ul>
+							</li>
+							<li><a href="">Гинекология</a>
+								<ul>
+									<li><a href="">Гистерорезектоскопическая полипэктомия</a></li>
+									<li><a href="">Раздельное диагностическое выскабливание полости матки</a></li>
+									<li><a href="">Гистерорезектоскопическая миомэктомия</a></li>
+									<li><a href="">Гистероскопия</a></li>
+									<li><a href="">Гистерорезектоскопическая полипэктомия. Раздельное диагностическое выскабливание полости матки. Внутривенный наркоз. Пребывание в стационаре. Гистология</a></li>
+								</ul>
+							</li>
+							<li><a href="">Урология</a>
+								<ul>
+									<li><a href="">Прием врача уролога первичный, амбулаторный</a></li>
+									<li><a href="">Прием врача-уролога повторный</a></li>
+									<li><a href="">Взятие мазка из уретры</a></li>
+									<li><a href="">Медикаментозная обработка полового члена при баланопостите</a></li>
+									<li><a href="">Массаж предстательной железы</a></li>
+									<li><a href="">Удаление кондилом методом электрокоагуляции (один элемент)</a></li>
+									<li><a href="">Удаление кондилом радиохирургическим методом (группа элементов)</a></li>
+									<li><a href="">Разделение синехий</a></li>
+									<li><a href="">Удаление инородного тела крайней плоти</a></li>
+									<li><a href="">Забор секрета простаты</a></li>
+									<li><a href="">Обрезание крайней плоти (циркумцизия) с учетом местной анестезии и наложения повязки</a></li>
+									<li><a href="">Френулопластика (пластика уздечки)</a></li>
+									<li><a href="">Катетеризация мочевого пузыря</a></li>
+									<li><a href="">Инстилляция мочевого пузыря (с учетом лекарственных средств)</a></li>
+									<li><a href="">Смена цистостомического дренажа</a></li>
+									<li><a href="">Вправление головки полового члена при парафимозе</a></li>
+									<li><a href="">Биопсия предстательной железы (простаты) 1 степень сложности (без учета гистологии)</a></li>
+									<li><a href="">Биопсия предстательной железы (простаты) 2 степень сложности (без учета гистологии)</a></li>
+									<li><a href="">Биопсия предстательной железы (простаты) 3 степень сложности (без учета гистологии)</a></li>
+									<li><a href="">УЗИ почек и мочевого пузыря</a></li>
+									<li><a href="">УЗИ почек</a></li>
+									<li><a href="">УЗИ почек и надпочечников</a></li>
+									<li><a href="">УЗИ мочевого пузыря (остаточная моча)</a></li>
+									<li><a href="">УЗИ почек и мочевого пузыря (остаточная моча)</a></li>
+									<li><a href="">УЗИ почек и мочевого пузыря (остаточная моча), предстательной железы</a></li>
+									<li><a href="">УЗИ предстательной железы и мочевого пузыря (остаточная моча)</a></li>
+									<li><a href="">ТРУЗИ предстательной железы (трансректальное УЗИ)</a></li>
+									<li><a href="">УЗИ органов мошонки с доплером</a></li>
+								</ul>
+							</li>
+							<li><a href="">Ревматология</a>
+								<ul>
+									<li><a href="">Консультация ревматолога, кмн, первичная</a></li>
+									<li><a href="">Консультация ревматолога, кмн, повторная</a></li>
+									<li><a href="">PRP 1 пробирка</a></li>
+									<li><a href="">PRP 2 пробирки</a></li>
+								</ul>
+							</li>
+							<li><a href="">Гастроэнтерология</a>
+								<ul>
+									<li><a href="">Консультация гастроэнтеролога, первичная</a></li>
+									<li><a href="">Консультация гастроэнтеролога, повторная</a></li>
+								</ul>
+							</li>
+							<li><a href="">Неврология</a>
+								<ul>
+									<li><a href="">Консультация невролога КМН, первичная</a></li>
+									<li><a href="">Консультация невролога КМН, повторная</a></li>
+									<li><a href="">Инъекция ботулинического токсина типа А, 1 флакон (без стоимости препарата)</a></li>
+									<li><a href="">Медикаментозная блокада триггерных зон (1 зона) со стоимостью препарата</a></li>
+									<li><a href="">Медикаментозная блокада туннельного синдрома</a></li>
+									<li><a href="">Инъекция ботулинического токсина типа А, 2 флакона (без стоимости препарата</a></li>
+									<li><a href="">Лечение с использованием лекарственного препарата Ксеомин 50 ЕД</a></li>
+									<li><a href="">Лечение мигрени с использованием лекарственного препарата Иринэкс</a></li>
+									<li><a href="">Лечение мигрени с использованием лекарственного препарата Аджови</a></li>
+									<li><a href="">Лечение с использованием лекарственного препарата Ксеомин 100 ЕД</a></li>
+									<li><a href="">Кинезиотейпирование мелкого сустава</a></li>
+									<li><a href="">Кинезиотейпирование малой зоны (1 отдел позвоночника, ВНЧС и т.д.)</a></li>
+									<li><a href="">Кинезиотейпирование средней зоны (2 отдела позвоночника, сегмены верхней конечности, брюшная стенка)</a></li>
+									<li><a href="">Кинезиотейпирование большой зоны (3 отдела позвоночника, сегмены нижней конечности и т.д.)</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>	
+				<ul class="map-list">
+					<li><a href="">Врачи</a>
+						<ul>
+							<li><a href="">Дехисси Муад Альфредович</a></li>
+							<li><a href="">Бабасян Лилит Левоновна</a></li>
+							<li><a href="">Арутюнянц Арсен Гамлетович</a></li>
+							<li><a href="">Гилязова Алсу Вильямовна</a></li>
+							<li><a href="">Кармолиев Рустам Рафикович</a></li>
+							<li><a href="">Яковчиц Александр Олегович</a></li>
+							<li><a href="">Бобылева Виктория Николаевна</a></li>
+							<li><a href="">Никонов Михаил Юрьевич</a></li>
+							<li><a href="">Огнева Елена Владимировна</a></li>
+							<li><a href="">Селиванова Анна Владимировна</a></li>
+							<li><a href="">Севастьянова Наталья Владимировна</a></li>
+							<li><a href="">Булгакова Марина Евгеньевна</a></li>
+							<li><a href="">Давидов Натан Рашбилович</a></li>
+							<li><a href="">Ситникова Екатерина Юрьевна</a></li>
+							<li><a href="">Биндасова Ольга Ваноевна</a></li>
+							<li><a href="">Буков П. А.</a></li>
+						</ul>
+					</li>
+				</ul>			
+			</div>
+		</section>
+
+		<footer class="footerMain">
+	<div class="wrapperDefault">
+		<div class="footerMain-inner">
+			<div class="footerMain-logo">
+				<img src="img/logo-footer.webp" alt="" width="250" />
+			</div>
+			<div class="footerMain-menu">
+				<nav>
+					<a href="">О клинике</a>
+					<a href="">Врачи</a>
+					<a href="">Отзывы</a>
+					<a href="">Услуги и прайс</a>
+					<a href="">Карта сайта</a>
+				</nav>
+			</div>
+			<div class="footerMain-blind blindVersion-link">
+				<div class="footerMain-blind-ico blindVersion-ico impaired-skip"></div>
+				<div class="headerMain-blind-txt blindVersion-txt visibleFor-normal">
+					Версия для слабовидящих
+				</div>
+				<div class="headerMain-blind-txt blindVersion-txt visibleFor-impaired">
+					Обычная версия
+				</div>
+			</div>
+			<div class="footerMain-phone">
+				<a href="tel:+74952110803">+7 (495) 211-08-03</a>
+			</div>
+			<div class="footerMain-address">
+				<p>
+					Москва, метро Цветной бульвар <br />
+					Улица Самотёчная, 5&nbsp;(этаж&nbsp;2)
+				</p>
+				<p>С&nbsp;09:00 до&nbsp;21:00 ежедневно</p>
+			</div>
+			<div class="footerMain-socials visibleFor-impaired">
+				<div class="footerMain-socials-inner">
+					<p><b>E-mail:</b> <a href="mailto:info@mypromed.ru">info@mypromed.ru</a></p>
+					<p><b>Телефон:</b> <a href="tel:+74952110803">+7 (495) 211-08-03</a></p>
+					<p><b>Социальные сети:</b> <a href="">ВКонтакте</a>, <a href="">YouTube</a>, <a href="">Дзен</a></p>
+					<p><b>Мессенджеры:</b> WhatsApp, Telegram</p>
+				</div>
+			</div>
+			<div class="footerMain-socials visibleFor-normal">
+				<a href="mailto:info@mypromed.ru" class="footerMain-socials-item email">
+					<div class="footerMain-socials-item-img">
+						<img src="img/email.svg" alt="">
+					</div>
+					<div class="footerMain-socials-item-txt">info@mypromed.ru</div>
+				</a>
+				<a href="" class="footerMain-socials-item wt">
+					<div class="footerMain-socials-item-img">
+						<img src="img/wt.svg" alt="">
+					</div>
+				</a>
+				<a href="" class="footerMain-socials-item tg">
+					<div class="footerMain-socials-item-img">
+						<img src="img/tg.svg" alt="">
+					</div>
+				</a>
+				<a href="" class="footerMain-socials-item vk">
+					<div class="footerMain-socials-item-img">
+						<img src="img/vk.svg" alt="">
+					</div>
+				</a>
+				<a href="" class="footerMain-socials-item yt">
+					<div class="footerMain-socials-item-img">
+						<img src="img/yt.svg" alt="">
+					</div>
+				</a>
+				<a href="" class="footerMain-socials-item yd">
+					<div class="footerMain-socials-item-img">
+						<img src="img/yd.svg" alt="">
+					</div>
+				</a>
+			</div>
+			<div class="footerMain-map">
+				<img src="img/temp_map.webp" alt="" />
+				<a href="" class="btn btn-white w-100 mt-2 d-lg-none"><span class="btn-txt">Смотреть на Яндекс.Картах</span></a>
+			</div>
+			<div class="footerMain-confident">
+				<p><a href="">Политика в&nbsp;отношении обработки персональных данных и&nbsp;сведения о&nbsp;реализуемых требованиях к&nbsp;защите персональных данных</a></p>
+				<p><a href="">Сводные данные о&nbsp;результатах проведения СОУТ</a></p>
+			</div>
+			<div class="footerMain-gerb">
+				<img src="img/gerb.webp" alt="">
+				<p>Независимая оценка качества оказания услуг медицинским организациям
+					<a href="">Участвовать в голосовании</a></p>
+			</div>
+			<div class="footerMain-pays">
+				<div class="footerMain-pays-inner">
+					<div class="footerMain-pays-title"><b>Мы принимаем к оплате: </b>
+						<span class="footerMain-pays-cards visibleFor-impaired">
+							<span>МИР,</span>
+							<span>Visa,</span>
+							<span>MasterCard,</span>
+							<span>UnionPay</span>
+						</span>
+					</div>
+					<div class="footerMain-pays-item mir">
+						<img src="img/card-mir.svg" alt="">
+					</div>
+					<div class="footerMain-pays-item visa">
+						<img src="img/card-visa.svg" alt="">
+					</div>
+					<div class="footerMain-pays-item mc">
+						<img src="img/card-mc.svg" alt="">
+					</div>
+					<div class="footerMain-pays-item up">
+						<img src="img/card-up.svg" alt="">
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<div class="footerMain-bottom">
+		<div class="wrapperDefault">
+			<div class="row">
+				<div class="col-12 col-lg-4">
+					© 2013 - 2024 Клиника “Здоровая система”,  <br />
+					Лицензия № 0000-000000-00/00000000 от 00.00.0000 г.
+				</div>
+				<div class="col-12 col-lg-3">
+					Имеются противопоказания необходимо проконсультироваться со специалистом
+				</div>
+				<div class="col-12 col-lg-4">
+					Айдентика и дизайн wearegeek.ru  <br />
+					Программирование и продвижение 6-sense.pro
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- popup Вакансия -->
+<div class="modal modal-vacancy fade" tabindex="-1" id="modal-vacancy">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="modal-title h1">Оставьте контакты и&nbsp;мы&nbsp;вам перезвоним</div>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+			</div>
+			<div class="modal-body">
+				<p>Заполните форму и наш специалист свяжется с вами в течение 30 минут</p>
+				<form class="form form-popup">
+					<div class="form-item">
+						<div class="form-item-inputContainer">
+							<input class="form-item-input" type="text" placeholder=" ">
+							<div class="form-item-placeholder">Ваше имя</div>
+						</div>
+					</div>
+					<div class="form-item">
+						<div class="form-item-inputContainer">
+							<input class="form-item-input" type="text" placeholder=" ">
+							<div class="form-item-placeholder">Номер телефона</div>
+						</div>
+					</div>
+					<div class="form-item">
+						<div class="form-item-inputContainer">
+							<textarea class="form-item-input" placeholder=" "></textarea>
+							<div class="form-item-placeholder">Сопроводительное письмо</div>
+						</div>
+					</div>
+					<div class="form-item form-item-attach mt-2 mb-5">
+						<label class="form-item-label" for="attachFileInput">Прикрепить резюме</label>	
+						<div class="form-item-input-wrap">
+							<input id="attachFileInput" class="form-item-input" type="file" accept=".doc,.docx, .pdf" onchange="attachFile.get(this, 5)">
+						</div>
+						<div class="form-item-attach-error"></div>
+					</div>	
+					<div class="form-item">							
+						<div class="form-item-boxContainer">
+							<input id="vacancyCheck" type="checkbox" value="1" name="" class="form-item-inputCheckbox">
+							<span class="checkbox"></span>
+							<label for="vacancyCheck" class="checkbox-content">
+								<span class="checkbox-txt fs-10 c-white">
+									Я согласен с <a href="" class="c-white uline">политикой конфиденциальности</a>
+								</span>
+							</label>
+						</div>	
+					</div>
+					<button type="button" class="btn btn-white btn-submit mt-2"><span class="btn-txt">Отправить заявку</span></button>
+				</form>
+			</div>			
+		</div>
+	</div>
+</div>
+
+<!-- popup Контакт -->
+<div class="modal modal-contact fade" tabindex="-1" id="modal-contact">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="modal-title h1">Оставьте контакты и&nbsp;мы&nbsp;вам перезвоним</div>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+			</div>
+			<div class="modal-body">
+				<p>Заполните форму и наш специалист свяжется с вами в течение 30 минут</p>
+				<form class="form form-popup">
+					<div class="form-item">
+						<div class="form-item-inputContainer">
+							<input class="form-item-input" type="text" placeholder=" ">
+							<div class="form-item-placeholder">Ваше имя</div>
+						</div>
+					</div>
+					<div class="form-item">
+						<div class="form-item-inputContainer">
+							<input class="form-item-input" type="text" placeholder=" ">
+							<div class="form-item-placeholder">Номер телефона</div>
+						</div>
+					</div>										
+					<div class="form-item">							
+						<div class="form-item-boxContainer">
+							<input id="contactCheck" type="checkbox" value="1" name="" class="form-item-inputCheckbox">
+							<span class="checkbox"></span>
+							<label for="contactCheck" class="checkbox-content">
+								<span class="checkbox-txt fs-10 c-white">
+									Я согласен с <a href="" class="c-white uline">политикой конфиденциальности</a>
+								</span>
+							</label>
+						</div>	
+					</div>
+					<button type="button" class="btn btn-white btn-submit mt-2"><span class="btn-txt">Отправить заявку</span></button>
+				</form>
+			</div>			
+		</div>
+	</div>
+</div>
+
+<!-- всплывающая подсказка -->
+<div class="modal modal-tooltip fade" tabindex="-1" id="modal-tooltip">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+			</div>
+			<div class="modal-body">
+				<!-- tooptip content here  -->
+				<!-- content is added from common.js -->
+			</div>			
+		</div>
+	</div>
+</div>
+
+<script defer src="js/bootstrap.min.js"></script>
+<script defer type="text/javascript" src="js/custom-select.min.js"></script>
+<link rel="stylesheet" href="css/swiper.min.css" />
+<script defer type="text/javascript" src="js/swiper.min.js"></script>
+
+<script defer type="text/javascript" src="js/common.js"></script>
+	</div>
+
+</body>
+
+</html>
